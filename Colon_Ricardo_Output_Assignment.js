@@ -1,5 +1,6 @@
 //Ricardo Colon SDI Section 01 August 6 2015
-
+//Professor Lee Lewis
+//Full Sail University
 
 //String Variable
 var myNickname;
