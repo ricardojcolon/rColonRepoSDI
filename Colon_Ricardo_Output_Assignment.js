@@ -56,8 +56,10 @@ if ( myUser_answer == linguistic_iq ) {
 
 if ( myUser_answer < linguistic_iq ) {
    alert("No. Next time go up some more.");
+   alert("Your answer is, " + incorrect);
 }
 
 if ( myUser_answer > linguistic_iq ) {
    alert("No. Next time go down some more.");
+   alert("Your answer is, " + incorrect);
 }
