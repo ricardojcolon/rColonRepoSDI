@@ -64,3 +64,4 @@ if ( myUser_answer > linguistic_iq ) {
    alert("No. Next time go down some more.");
    alert("Your answer is, " + incorrect);
 }
+console.log("This is my first output.");
