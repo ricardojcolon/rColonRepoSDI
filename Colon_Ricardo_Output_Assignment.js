@@ -36,7 +36,7 @@ positive = true;
 
 var incorrect;	
 negative = false;
-
+//These yes or no types of variables exist because computers dont understand maybe.
 
 
 //Second Interaction With User
