@@ -64,5 +64,5 @@ if ( myUser_answer > linguistic_iq ) {
    alert("No. Next time go down some more.");
    alert("Your answer is, " + incorrect);
 }
-alert("As you can see my friends think I am crazy and kind of a nerd.");
+alert("As you can see my friends think I am an adrenaline junkie kind of a nerd.");
 console.log("This is my first output.");
