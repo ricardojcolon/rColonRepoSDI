@@ -33,10 +33,10 @@ explosives_iq = 400;
 //Boolean variables
 
 var correct;	
-positive = true;
+correct = true;
 
 var incorrect;	
-negative = false;
+incorrect = false;
 //These yes or no types of variables exist because computers dont understand maybe.
 
 
@@ -64,4 +64,5 @@ if ( myUser_answer > linguistic_iq ) {
    alert("No. Next time go down some more.");
    alert("Your answer is, " + incorrect);
 }
+alert("As you can see my friends think I am crazy and kind of a nerd.");
 console.log("This is my first output.");
