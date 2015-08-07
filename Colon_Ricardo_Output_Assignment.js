@@ -4,7 +4,7 @@
 //String Variable
 var myNickname;
 myNickname = "mcGiver";
-
+//String Variables are text variables
 
 //First Interaction With User
 alert("My nickname is:" + myNickname);
@@ -27,15 +27,17 @@ math_iq = 400;
 
 var explosives_iq;
 explosives_iq = 400;
-
+//Number variables come in whole and in fraction numbers
 
 //Boolean variables
 
-var positive;	
+var correct;	
 positive = true;
 
-var negative;	
+var incorrect;	
 negative = false;
+
+
 
 //Second Interaction With User
 
@@ -46,10 +48,10 @@ alert("If my Math IQ equals my Explosives IQ and my Language IQ is quarter the v
 var myUser_answer = prompt("What is the value of my Language IQ?");
 alert("You answered, " + myUser_answer);
 
+//Basic omparison learned after watching videos from Intro to Programming Assignment
 
 if ( myUser_answer == linguistic_iq ) {
-   alert("Yes, a is equal to b");
-   alert("Your answer is, " + positive);
+   alert("Your answer is, " + correct);
 }
 
 if ( myUser_answer < linguistic_iq ) {
