@@ -1,0 +1,9 @@
+<html>
+	<head>
+		<title>Calculator</title>
+	</head>
+	<body>
+		<p>This is my Week 2 Calculator Assignment RColon</p>
+		<script src="calculator.js"></script>
+	</body>
+</html>
