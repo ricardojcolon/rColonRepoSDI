@@ -1,0 +1,180 @@
+//Ricardo Colon SDI Week 2
+
+//Part One of The Program Number of Seconds Alive
+
+//First Request String Variable
+var name = prompt("What is your name?");
+alert("Hello, " + name);
+//I wanted to display a description of what my calculator did on the page.
+document.write("<h2>Find your age in seconds & the day of the week you were born (if you were born before year 2000).</h2>");
+
+//The program will print the information at the end so I also decided to display the name on the page first.
+document.write(name);
+
+var yearsAlive = prompt("What is your age in years?");
+
+//This is the first time i am recording and also displaying on page.
+document.write("You are " + yearsAlive + " years old!");
+console.log("You are " + yearsAlive+ " years old!");
+
+//This are the only constant variables in the program. I did it to avoid confusion if I multiplied all those values 
+var secondsPerMin = 60;
+var minsPerHour = 60;
+var hoursPerDay = 24;
+var daysPerWeek = 7;
+var weeksPerYear = 52;
+//Year age in seconds equation
+var secondsAlive = yearsAlive * secondsPerMin * minsPerHour * hoursPerDay * daysPerWeek * weeksPerYear;
+
+
+alert("You've been alive for more than " + secondsAlive + " seconds!");
+
+//Second data that I wanted to both display and record in case of future debugging
+
+console.log(yearsAlive * secondsPerMin * minsPerHour * hoursPerDay * daysPerWeek * weeksPerYear);
+document.write("You've been alive for more than " + secondsAlive + " seconds!");
+
+
+//Part Two of The Program Calculating the Day the user was Born
+//This algorithim is known as the Zeller's congruence.
+//I learned it in one of my math engineering classes and thought it would be a good idea to make it a program
+
+var last2Year = prompt("What are the last 2 digits of the year were you born?");
+document.write("You were born in the year 19" + last2Year + "!");
+
+var first3month = prompt("What are the first 3 letters of the month were you born?");
+document.write("You were born in the month of " + first3month + "!");
+
+var dateOFmonth = prompt("What date of the month were you born?");
+document.write("You were born in the " + dateOFmonth + "  day of the month!");
+
+//Array variable used to identify date format
+var dATEfORMAT = [ "Months", "Date", "Year"]
+alert("The date will be on this format " +  dATEfORMAT + ".")
+
+alert("Your birthday is on, " + first3month + "/" + dateOFmonth + "/" + last2Year + ".");
+
+alert(name + " , we will try to calculate the day of the week that you were born. ");
+
+//Every alert was used to explain to the user how they can do it without this program
+
+var step1 = last2Year * 5;
+alert("First, we multiply the last 2 digits of the year you were born, " + last2Year + " by 5.");
+alert(" That equals " + step1 + ".");
+
+var step2 = step1 / 4;
+alert("Then, we divide " + step1 + " by 4.");
+alert(" That equals " + step2 + ".");
+
+
+var step3 = Math.floor(step2)
+alert("Then, we eliminate the numbers of " + step2 + "  after the decimal point.");
+alert(" That equals " + step3 + ".");
+
+
+
+alert(" Then we add a month code to that number. " + "  The codes for each month are: jan = 1, feb = 4, , mar = 4, apr = 0, may = 2, jun = 5, jul = 0, aug = 3, sep = 6, oct = 1, nov = 4, and dec = 6.");
+
+//I learned how to write conditional code switch function by watching programming fundamentals video from one of the assignments in lynda.com
+
+switch ( first3month ) {
+	case "jan":
+		alert(" Your month code is " + 1 + ".");
+		break;
+	case "feb":
+		alert(" Your month code is " + 4 + ".");
+		break;
+	case "mar":
+		alert(" Your month code is " + 4 + ".");
+		break;
+	case "apr":
+		alert(" Your month code is " + 0 + ".");
+		break;
+	case "may":
+		alert(" Your month code is " + 2 + ".");
+		break;
+	case "jun":
+		alert(" Your month code is " + 5 + ".");
+		break;
+	case "jul":
+		alert(" Your month code is " + 0 + ".");
+		break;
+	case "aug":
+		alert(" Your month code is " + 3 + ".");
+		break;
+	case "sep":
+		alert(" Your month code is " + 6 + ".");
+		break;
+	case "oct":
+		alert(" Your month code is " + 1 + ".");
+		break;
+	case "nov":
+		alert(" Your month code is " + 4 + ".");
+		break;
+	case "dec":
+		alert(" Your month code is " + 6 + ".");
+		break;
+	default:
+		alert(" A mistake was made by you when typed the month.");
+}
+
+
+
+var step4 = prompt("Type your month code");
+var step5 = (step3 + step4 *1);
+alert(" The sum equals " + step5);
+
+var step6 = (step5 + dateOFmonth *1);
+alert(" Then we add your date which is " + dateOFmonth );
+alert(" The sum equals " + step6 + ".");
+
+var step7 = (step6 / 7)
+var step7dec = (step7 * 1.00)
+alert(" Then we divide that number by 7. ");
+alert(" That equals " + step7dec + ".");
+alert(" Now you will select and type the first number to the right of " + step7dec + " if there is one; otherwise type 0.");
+
+var step8 = prompt("Type the number.");
+
+alert(" That number is what we call a day code.  " + "  The codes for each day are: sun = 1, mon = 2, , tues = 4, wed = 5, thur = 7, fri = 8, and sat = 0.");
+
+switch ( step8 ) {
+	case "1":
+		alert(" You were born on a Sunday.");
+		document.write("<h1>You were born on a Sunday.</h1>");
+		print(" You were born on a Sunday.");
+		break;
+	case "2":
+		alert(" You were born on a Monday.");
+		document.write("<h1>You were born on a Monday.</h1>");
+		print(" You were born on a Monday.");
+		break;
+	case "4":
+		alert(" You were born on a Tuesday.");
+		document.write("<h1>You were born on a Tuesday.</h1>");
+		print(" You were born on a Tuesday.");
+		break;
+	case "5":
+		alert(" You were born on a Wednesday.");
+		document.write("<h1>You were born on a Wednesday.</h1>");
+		print(" You were born on a Wednesday.");
+		break;
+	case "7":
+		alert(" You were born on a Thursday.");
+		document.write("<h1>You were born on a Thursday.</h1>");
+		print(" You were born on a Thursday.");
+		break;
+	case "8":
+		alert(" You were born on a Friday.");
+		document.write("<h1>You were born on a Friday.</h1>");
+		print(" You were born on a Friday.");
+		break;
+	case "0":
+		alert(" You were born on a Saturday.");
+		document.write("<h1>You were born on a Saturday.</h1>");
+		print(" You were born on a Saturday.");
+		break;
+	default:
+		alert(" A mistake was made by you when typed in the day code.");
+}
+
