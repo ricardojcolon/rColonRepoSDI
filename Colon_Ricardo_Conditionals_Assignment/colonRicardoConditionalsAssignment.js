@@ -28,6 +28,14 @@ document.write(grossSalesPercentage);
 alert("Make sure you compare your gross sales percentage to the average in your particular industry. ");
 console.log (grossSalesPercentage);
 
+var numOfSales = prompt('Please type your number of sales');
+if (grossProfit < costOfGoodsSold && numOfSales > 1) {
+	document.write("You should consider going into business!");
+} else {
+	document.write("Numbers are bad. Do not go into business")
+}
+
+
 //Quiz to Identify Comprehension of The Subject
 
 
