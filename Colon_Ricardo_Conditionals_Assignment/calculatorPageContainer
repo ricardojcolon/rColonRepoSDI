@@ -1,0 +1,9 @@
+<html>
+	<head>
+		<title>Calculator</title>
+	</head>
+	<body>
+		<p>This is my Week 3 Calculator Assignment RColon</p>
+		<script src="colonRicardoConditionalsAssignment.js"></script>
+	</body>
+</html>
